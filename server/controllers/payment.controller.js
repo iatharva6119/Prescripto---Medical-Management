@@ -5,6 +5,7 @@ import Doctor from "../models/doctor.model.js";
 import User from "../models/user.model.js";
 import { appointmentPaymentEmailTemplate } from "../utils/emailTemplate.js";
 
+
 export const paymentRazorPay = async (req, res) => {
   try {
     
@@ -19,6 +20,7 @@ export const paymentRazorPay = async (req, res) => {
         message: "Appointment not found with the provided id.",
       });
     }
+    
 
     //check for if the appointment is cancelled
     if (appointment.status === "cancelled") {

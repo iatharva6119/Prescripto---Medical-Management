@@ -20,6 +20,7 @@ export const getAllDoctors = async (req, res) => {
   }
 };
 
+
 export const filterDoctorBySpeciality = async (req, res) => {
   try {
     const { speciality } = req.query;

@@ -31,6 +31,7 @@ export const registerPatient = async (req, res) => {
       email: email,
       password: hashedPassword,
     });
+    
 
     //generate token
     const patientToken = jwt.sign(
